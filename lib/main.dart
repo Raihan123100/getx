@@ -13,6 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+
+
+      initialRoute: '/pages',
+      routes: {
+        '/pages':(context)=> Home(),
+        '/pages/fs':(context)=>FirstScreen(),
+
+
+      },
         debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -31,7 +40,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home()
+     // home: Home()
     );
   }
 }

@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
             RaisedButton(
               child: Text('Next Route'),
               onPressed: () {
-                Get.to(Second());
+                Get.toNamed('/pages/fs');
               },
             ),
           ],
